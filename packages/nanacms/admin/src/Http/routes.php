@@ -3,6 +3,6 @@
 Route::get('admin', 'AdminController@index');
 Route::get('setting', 'SettingController@index');
 
-// Route::group(['middleware' => 'auth'], function() {
+Route::group(['prefix' => 'admin'], function() {
     Route::resource('article', 'ArticleController');
-// });
+});
