@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 46);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -40938,8 +40938,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 33 */,
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -40949,7 +40948,7 @@ module.exports = function(module) {
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(40);
+__webpack_require__(39);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -40957,27 +40956,17 @@ __webpack_require__(40);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(42));
+Vue.component('article-index', __webpack_require__(41));
 
 var app = new Vue({
   el: '#app'
 });
 
 /***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 37 */,
-/* 38 */
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40992,22 +40981,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
+  name: 'article-index',
+  props: {
+    data: Array
+  }
 });
 
 /***/ }),
-/* 39 */,
-/* 40 */
+/* 38 */,
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -41060,23 +41044,23 @@ window.axios.defaults.headers.common = {
 // });
 
 /***/ }),
-/* 41 */,
-/* 42 */
+/* 40 */,
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(30)(
   /* script */
-  __webpack_require__(38),
+  __webpack_require__(37),
   /* template */
-  __webpack_require__(44),
+  __webpack_require__(43),
   /* scopeId */
   null,
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/frankyoung/Sites/seek-home/resources/assets/js/components/Example.vue"
+Component.options.__file = "/Users/frankyoung/Sites/seek-home/packages/nanacms/admin/resources/assets/js/components/article/Index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] Index.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -41085,9 +41069,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c5a22a44", Component.options)
+    hotAPI.createRecord("data-v-4d15620e", Component.options)
   } else {
-    hotAPI.reload("data-v-c5a22a44", Component.options)
+    hotAPI.reload("data-v-4d15620e", Component.options)
   }
 })()}
 
@@ -41095,43 +41079,35 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 43 */,
-/* 44 */
+/* 42 */,
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('div', {
-    staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
-}]}
+  }, _vm._l((_vm.data), function(d) {
+    return _c('div', {
+      staticClass: "row"
+    }, [_c('div', {
+      staticClass: "col-md-12"
+    }, [_vm._v("\n            " + _vm._s(d.title) + "\n        ")])])
+  }))
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c5a22a44", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-4d15620e", module.exports)
   }
 }
 
 /***/ }),
-/* 45 */,
-/* 46 */
+/* 44 */,
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(34);
-__webpack_require__(35);
-module.exports = __webpack_require__(36);
+module.exports = __webpack_require__(33);
 
 
 /***/ })

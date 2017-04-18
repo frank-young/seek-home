@@ -25,3 +25,18 @@ mix.js('resources/assets/js/app.js', 'public/js')
         })
     ]
   });
+
+  const PATH = 'packages/nanacms/admin/'
+  mix.js(PATH + 'resources/assets/js/app.js', '../' + PATH + 'public/public/js')
+     .sass(PATH + 'resources/assets/sass/app.scss', '../' + PATH + 'public/css')
+     .webpackConfig({
+       plugins: [
+          new BrowserSyncPlugin({
+              files: [
+                  PATH + 'app/**/*',
+                  PATH + 'public/**/*',
+                  PATH + 'resources/views/**/*'
+              ]
+          })
+      ]
+    });

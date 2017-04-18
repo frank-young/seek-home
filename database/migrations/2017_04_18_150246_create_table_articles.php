@@ -13,7 +13,15 @@ class CreateTableArticles extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('articles', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title')->comment('标题');
+            $table->string('auth')->nullable()->comment('作者');
+            $table->string('img_path')->nullable()->comment('图片路径');
+            $table->string('description')->comment('描述');
+            $table->string('body')->comment('内容');
+            $table->timestamps();
+        });
     }
 
     /**
