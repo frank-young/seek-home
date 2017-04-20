@@ -7,8 +7,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="keyword" content="{{ config('app.keyword') }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -36,49 +37,49 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <span class="logo-s">seek</span><span class="logo-b">brand</span>
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endif
+                        <li class="active"><a class="link link-nav" href="{{ route('login') }}">首页</a></li>
+                        <li><a class="link link-nav" href="{{ route('login') }}">公司案例</a></li>
+                        <li><a class="link link-nav" href="{{ route('register') }}">关于我们</a></li>
+                        <li><a class="link link-nav" href="{{ route('register') }}">联系我们</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
         @yield('content')
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-3">
+                <p>
+                  <a class="link" href="about.html"> 首页</a>
+                </p>
+                <p>
+                  <a class="link" href="about.html"> 公司案例</a>
+                </p>
+                <p>
+                  <a class="link" href="about.html"> 关于我们</a>
+                </p>
+                <p>
+                  <a class="link" href="about.html"> 联系我们</a>
+                </p>
+              </div>
+              <div class="col-xs-9">
+                <p class="text-right">Copyright © 2017 seekbrand.net 版权所有</p>
+                <p class="text-right">西可（天津）有限公司</p>
+                <p class="text-right"><a class="link" target="_blank" href="http://www.miitbeian.gov.cn/">津ICP备16054332-2号</a></p>
+                <p class="text-right">Power By <a class="link" target="_blank" href="http://www.nanafly.com/">NanaDeep</a></p>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
 
     <!-- Scripts -->

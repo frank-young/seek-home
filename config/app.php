@@ -12,7 +12,8 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'seekbrand-顶级品服务商',
+    'keyword' => '品牌战略咨询、品牌识别设计、品牌体验表现（环境、导示、网站、包装）、品牌广告推广等专业产品与服务。',
 
     /*
     |--------------------------------------------------------------------------
