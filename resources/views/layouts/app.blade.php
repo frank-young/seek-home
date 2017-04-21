@@ -44,10 +44,10 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a class="link link-nav" href="{{ route('login') }}">首页</a></li>
-                        <li><a class="link link-nav" href="{{ route('login') }}">公司案例</a></li>
-                        <li><a class="link link-nav" href="{{ route('register') }}">关于我们</a></li>
-                        <li><a class="link link-nav" href="{{ route('register') }}">联系我们</a></li>
+                        <li class="active"><a class="link link-nav" href="{{ url('/') }}">首页</a></li>
+                        <li><a class="link link-nav" href="{{ url('/example') }}">公司案例</a></li>
+                        <li><a class="link link-nav" href="{{ url('/about') }}">关于我们</a></li>
+                        <li><a class="link link-nav" href="{{ url('/contact') }}">联系我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -80,6 +80,36 @@
             </div>
           </div>
         </footer>
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="contactModalLabel">联系我们</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label>姓名</label>
+                    <input type="text" class="form-control" placeholder="姓名">
+                  </div>
+                  <div class="form-group">
+                    <label>手机</label>
+                    <input type="text" class="form-control" placeholder="手机">
+                  </div>
+                  <div class="form-group">
+                    <label>简单介绍</label>
+                    <textarea type="text" class="form-control" placeholder="简单的介绍"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">发送</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
     <!-- Scripts -->

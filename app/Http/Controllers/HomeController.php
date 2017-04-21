@@ -7,15 +7,25 @@ use Nanacms\Admin\Models\Article;
 
 class HomeController extends Controller
 {
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         // $articles = Article::all();
         // return view('home');
-        return view('home', compact('articles'));
+        return view('home');
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function example()
+    {
+        return view('example');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }
