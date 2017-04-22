@@ -78,10 +78,8 @@
       <div class="col-md-8">
         <h2 >因为信任，所以专业</h2>
       </div>
-      <div class="col-md-4">
-        <div class="btn-group">
+      <div class="col-md-4 text-center mt-xs-40">
           <a class="btn btn-line btn-lg" role="button" data-toggle="modal" data-target="#contactModal">联系我们</a>
-        </div>
       </div>
     </div>
   </div>

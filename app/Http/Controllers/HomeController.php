@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Nanacms\Admin\Models\Article;
+// use App\Models\Article;
 
 class HomeController extends Controller
 {
@@ -21,11 +22,17 @@ class HomeController extends Controller
 
     public function example()
     {
-        return view('example');
+        $articles = Article::all();
+        return view('example', compact('articles'));
     }
 
     public function contact()
     {
         return view('contact');
+    }
+
+    public function show()
+    {
+        return view('example/show');
     }
 }

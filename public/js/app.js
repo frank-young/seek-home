@@ -40957,7 +40957,7 @@ __webpack_require__(40);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(42));
+Vue.component('example-list', __webpack_require__(42));
 
 var app = new Vue({
   el: '#app'
@@ -40998,11 +40998,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
+  props: {
+    data: {
+      type: Array
     }
+  },
+  data: function data() {
+    return {};
+  }
 });
 
 /***/ }),
@@ -41074,9 +41082,9 @@ var Component = __webpack_require__(30)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/frankyoung/Sites/seek-home/resources/assets/js/components/Example.vue"
+Component.options.__file = "/Users/frankyoung/Sites/seek-home/resources/assets/js/components/example/List.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] Example.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] List.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -41085,9 +41093,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-c5a22a44", Component.options)
+    hotAPI.createRecord("data-v-d0ef2e42", Component.options)
   } else {
-    hotAPI.reload("data-v-c5a22a44", Component.options)
+    hotAPI.reload("data-v-d0ef2e42", Component.options)
   }
 })()}
 
@@ -41100,27 +41108,31 @@ module.exports = Component.exports
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
   }, [_c('div', {
     staticClass: "row"
-  }, [_c('div', {
-    staticClass: "col-md-8 col-md-offset-2"
-  }, [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading"
-  }, [_vm._v("Example Component")]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n                    I'm an example component!\n                ")])])])])])
-}]}
+  }, _vm._l((_vm.data), function(d) {
+    return _c('div', {
+      staticClass: "col-sm-6 col-md-4"
+    }, [_c('div', {
+      staticClass: "thumbnail"
+    }, [_c('div', {
+      staticClass: "caption"
+    }, [_c('h3', [_vm._v(_vm._s(d.title))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(d.description))]), _vm._v(" "), _c('p', [_c('a', {
+      staticClass: "btn btn-primary",
+      attrs: {
+        "href": './example/' + d.id,
+        "role": "button"
+      }
+    }, [_vm._v("详情")])])])])])
+  }))])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-c5a22a44", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-d0ef2e42", module.exports)
   }
 }
 

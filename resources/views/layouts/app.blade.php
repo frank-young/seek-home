@@ -59,16 +59,16 @@
             <div class="row">
               <div class="col-xs-3">
                 <p>
-                  <a class="link" href="about.html"> 首页</a>
+                  <a class="link" href="{{ url('/') }}"> 首页</a>
                 </p>
                 <p>
-                  <a class="link" href="about.html"> 公司案例</a>
+                  <a class="link" href="{{ url('/example') }}"> 公司案例</a>
                 </p>
                 <p>
-                  <a class="link" href="about.html"> 关于我们</a>
+                  <a class="link" href="{{ url('/about') }}"> 关于我们</a>
                 </p>
                 <p>
-                  <a class="link" href="about.html"> 联系我们</a>
+                  <a class="link" href="{{ url('/contact') }}"> 联系我们</a>
                 </p>
               </div>
               <div class="col-xs-9">

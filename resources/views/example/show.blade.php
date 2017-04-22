@@ -4,13 +4,26 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="mb-0">
-      公司案例
+      标题
     </h1>
   </div>
   <div class="blur blur-hook"></div>
 </div>
 
-<example-list :data="{{$articles}}"></example-list>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="example-detail-wrap">
+        <h1>这是标题</h1>
+        <div class="img-box">
+          <img src="" alt="">
+        </div>
+        <p>dsajdlsajdaklsj记得看了撒娇的啥了看</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <div class="jumbotron mt-80 mb-0">
   <div class="container">

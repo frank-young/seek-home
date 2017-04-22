@@ -122,8 +122,8 @@ body {
   &:active:focus {
     box-shadow: none;
     outline: none;
-    background-color: #f1623f !important;
-    border-color: #f1623f !important;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
   }
 }
 
@@ -385,4 +385,132 @@ body {
   .tabpanel {
     // max-height: 100vh;
   }
+}
+
+.contact-wrap {
+  margin: 200px auto;
+}
+
+.example-detail-wrap {
+
+}
+
+@media (max-width: 768px) {
+  .mt-xs-40 {
+    margin-top: 40px;
+  }
+  // jumbotron
+    .jumbotron {
+      h1,h2 {
+        font-size: 24px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      p {
+        margin-bottom: 40px;
+        font-size: 16px;
+      }
+      .blur {
+        &:after {
+          background-color: rgba(0,0,0,0.6) !important;
+        }
+      }
+    }
+    // modal
+    .modal-content {
+      .modal-body {
+        padding: 20px;
+      }
+      .nav-tabs {
+        &>li {
+          margin-right: 10px;
+          &>a {
+            padding: 5px 15px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            font-weight: 300;
+            color: #777;
+          }
+        }
+        &>li.active {
+          &>a {
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    //content-wrap
+    .content-wrap {
+      .row {
+        margin-top: 0px;
+      }
+      .text-box {
+        padding: 0;
+        margin-top: 0;
+        h3 {
+          font-size: 24px;
+          text-align: center;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .img-box {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        img {
+          width: 75%;
+          -webkit-transition: all .2s;
+          transition: all .2s;
+        }
+      }
+    }
+    // about
+    .about-wrap {
+      h3 {
+        font-size: 16px;
+        text-indent: 2em;
+      }
+    }
+    .about-wrap {
+      .logo-wrap {
+        margin: 50px 0;
+        img {
+          width: 68px;
+        }
+      }
+      h3,h4 {
+        max-width: 280px;
+        text-indent: 0;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      h4 {
+        margin: 50px auto;
+      }
+      p {
+        font-size: 16px;
+        text-indent: 2em;
+      }
+      .self-wrap {
+        margin-bottom: 50px;
+        font-size: 18px;
+        .face {
+          text-align: center;
+          img {
+            width: 120px;
+            height: 120px;
+          }
+        }
+        .intro {
+          padding: 0 20px;
+          font-size: 14px;
+        }
+      }
+    }
 }
