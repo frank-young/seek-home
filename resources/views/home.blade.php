@@ -3,14 +3,19 @@
 @section('content')
 <div class="jumbotron">
   <div class="container">
-    <h1>
-      <span class="color-yellow">探索，</span>追寻
-    </h1>
-    <p>
-      seek brand，顶级品牌服务商<br>
-    </p>
-    <div class="btn-group">
-      <a class="btn btn-warning btn-lg" role="button" data-toggle="modal" data-target="#contactModal">联系我们</a>
+    <div class="col-md-6 mt-40">
+      <h1>
+        生活总是在追求和探索
+      </h1>
+      <p>
+        专业、顶级品牌设计服务商<br>
+      </p>
+      <div class="btn-group">
+        <a class="btn btn-warning btn-lg" role="button" data-toggle="modal" data-target="#contactModal">联系我们</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+        <img class="banner" src="{{ asset('images/banner.png') }}" alt="">
     </div>
   </div>
   <div class="blur blur-hook"></div>
@@ -25,7 +30,7 @@
     </div>
     <div class="col-md-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('iamges/img_01.jpg') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_01.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -38,7 +43,7 @@
     </div>
     <div class="col-md-6 col-md-pull-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('iamges/img_01.jpg') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_02.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -53,7 +58,7 @@
     </div>
     <div class="col-md-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('iamges/img_01.jpg') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_03.png') }}" alt="">
       </div>
     </div>
   </div>
@@ -67,7 +72,7 @@
     </div>
     <div class="col-md-6 col-md-pull-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('images/img_01.jpg') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_04.jpg') }}" alt="">
       </div>
     </div>
   </div>
@@ -90,24 +95,31 @@
     <div class="col-md-12">
       <h2 class="text-center">专业的设计流程</h2>
     </div>
-    <div class="col-md-12 img-center">
-      <img src="{{ asset('images/design.jpeg') }}" alt="">
-    </div>
-  </div>
-</div>
-
-<div class="container mt-80">
-  <div class="row">
-    <div class="col-md-6 mt-120">
-      <h2 class="text-center">
-        24/7客服
-      </h2>
-      <h2 class="text-center">
-        专业的解决方案
-      </h2>
-    </div>
-    <div class="col-md-6 img-center">
-      <img src="{{ asset('images/server.jpeg') }}" alt="">
+    <div class="col-md-8 col-md-offset-2 img-center mt-80">
+      <div class="pro-img-box">
+        <h4>1.项目需求文档</h4>
+        <img src="{{ asset('images/pro_01.jpg') }}" alt="">
+      </div>
+      <div class="pro-img-box">
+        <h4>2.项目需求分析</h4>
+        <img src="{{ asset('images/pro_02.jpg') }}" alt="">
+      </div>
+      <div class="pro-img-box">
+        <h4>3.项目周期安排</h4>
+        <img src="{{ asset('images/pro_03.jpg') }}" alt="">
+      </div>
+      <div class="pro-img-box">
+        <h4>4.开展实时项目</h4>
+        <img src="{{ asset('images/pro_04.jpg') }}" alt="">
+      </div>
+      <div class="pro-img-box">
+        <h4>5.项目意见交流</h4>
+        <img src="{{ asset('images/pro_05.jpg') }}" alt="">
+      </div>
+      <div class="pro-img-box">
+        <h4>6.完成项目</h4>
+        <img src="{{ asset('images/pro_06.jpg') }}" alt="">
+      </div>
     </div>
   </div>
 </div>
