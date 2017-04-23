@@ -34,7 +34,7 @@
     </div>
     <div class="col-md-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('images/img_01.png') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_01_c.jpeg') }}" alt="">
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@
     </div>
     <div class="col-md-6 col-md-pull-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('images/img_02.png') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_02_c.jpeg') }}" alt="">
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
     </div>
     <div class="col-md-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('images/img_03.png') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_03_c.jpeg') }}" alt="">
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@
     </div>
     <div class="col-md-6 col-md-pull-6">
       <div class="img-box">
-        <img class="blur-hook" src="{{ asset('images/img_04.jpg') }}" alt="">
+        <img class="blur-hook" src="{{ asset('images/img_04_c.jpeg') }}" alt="">
       </div>
     </div>
   </div>

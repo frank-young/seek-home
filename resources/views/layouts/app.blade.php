@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a class="link link-nav" href="{{ url('/') }}">首页</a></li>
+                        <li><a class="link link-nav" href="{{ url('/') }}">首页</a></li>
                         <li><a class="link link-nav" href="{{ url('/example') }}">公司案例</a></li>
                         <li><a class="link link-nav" href="{{ url('/about') }}">关于我们</a></li>
                         <li><a class="link link-nav" href="{{ url('/contact') }}">联系我们</a></li>
@@ -88,7 +88,7 @@
                 <h4 class="modal-title" id="contactModalLabel">联系我们</h4>
               </div>
               <div class="modal-body">
-                <form>
+                <!-- <form>
                   <div class="form-group">
                     <label>姓名</label>
                     <input type="text" class="form-control" placeholder="姓名">
@@ -102,7 +102,10 @@
                     <textarea type="text" class="form-control" placeholder="简单的介绍"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">发送</button>
-                </form>
+                </form> -->
+                <div class="contact-phone">
+                  请拨打电话：<span>022-58095866</span>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>

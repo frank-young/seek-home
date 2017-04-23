@@ -40,13 +40,15 @@
         },
         created() {
             if(this.path !== ''){
-                if (this.src !== ''){
-                  this.src = PATH + this.path
-                  this.$parent.imagePath = this.path
-                } else {
-                  this.src = '/seek-home/public/images/banner.jpg'
-                  this.$parent.imagePath = '/seek-home/public/images/banner.jpg'
-                }
+                this.src = PATH + this.path
+                this.$parent.imagePath = this.path
+                // if (this.src !== ''){
+                //   this.src = PATH + this.path
+                //   this.$parent.imagePath = this.path
+                // } else {
+                //   this.src = '/seek-home/public/images/banner.jpg'
+                //   this.$parent.imagePath = '/seek-home/public/images/banner.jpg'
+                // }
             }
         },
         methods: {

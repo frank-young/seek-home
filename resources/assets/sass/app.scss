@@ -42,6 +42,9 @@ body {
   margin-bottom: 0 !important;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
@@ -110,6 +113,8 @@ body {
 }
 
 .link-nav {
+  font-size: 16px;
+  font-weight: 300;
   &:after {
     border-bottom: 3px solid $primary-color;
   }
@@ -415,6 +420,13 @@ body {
   .tabpanel {
     // max-height: 100vh;
   }
+  .contact-phone {
+    font-size: 24px;
+    span {
+      font-size: 46px;
+      color: $primary-color;
+    }
+  }
 }
 
 .contact-wrap {
@@ -422,7 +434,26 @@ body {
 }
 
 .example-detail-wrap {
-
+  .ex-img-box {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #ccc;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.9em;
+    font-weight: 300;
+  }
 }
 
 @media (max-width: 768px) {

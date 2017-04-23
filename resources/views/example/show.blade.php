@@ -4,21 +4,20 @@
 <div class="jumbotron">
   <div class="container">
     <h1 class="mb-0">
-      标题
+      {{$article->title}}
     </h1>
   </div>
-  <div class="blur blur-hook"></div>
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="example-detail-wrap">
-        <h1>这是标题</h1>
-        <div class="img-box">
-          <img src="" alt="">
+        <h1>{{$article->title}}</h1>
+        <div class="ex-img-box">
+          <img src="/seek-home/storage/app/{{$article->img_path}}" alt="">
         </div>
-        <p>dsajdlsajdaklsj记得看了撒娇的啥了看</p>
+        <p>{{$article->body}}</p>
       </div>
 
     </div>

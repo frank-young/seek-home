@@ -9,9 +9,14 @@ class HomeController extends Controller
 {
     public function index()
     {
-        // $articles = Article::all();
-        // return view('home');
-        return view('home');
+        $articles = Article::limit(3)->get();
+        return view('home', compact('articles'));
+    }
+
+    public function index2()
+    {
+        $articles = Article::limit(3)->get();
+        return view('home2', compact('articles'));
     }
 
     public function about()
@@ -30,8 +35,9 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function show()
+    public function show($id)
     {
-        return view('example/show');
+        $article = Article::find($id);
+        return view('example/show', compact('article'));
     }
 }

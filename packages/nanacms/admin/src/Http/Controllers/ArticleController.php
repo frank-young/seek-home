@@ -38,4 +38,38 @@ class ArticleController extends Controller
             return redirect()->back()->withInput()->withErrors('保存失败！');
         }
     }
+
+    public function edit($id) {
+      $article = Article::find($id);
+
+      return view('admin::article.edit', compact('article'));
+    }
+
+    public function update(Request $request)
+    {
+    	$this->validate($request, [
+	        'title' => 'required|max:255',
+	        'description' => 'required',
+	        'body' => 'required'
+	    ]);
+    	$article = Article::where('id', $request->get('id'))->first();
+      $article->title = $request->get('title');
+	    $article->img_path = $request->get('img_path');
+	    $article->description = $request->get('description');
+	    $article->body = $request->get('body');
+
+		if($article->save()) {
+			return redirect('admin/article');
+		} else {
+	        return redirect()->back()->withInput()->withErrors('保存失败！');
+	    }
+
+    }
+
+	public function destroy($id)
+	{
+	    Article::find($id)->delete();
+	    return Response::json(['errno'=>0, 'msg'=>'删除成功']);
+	}
+
 }
