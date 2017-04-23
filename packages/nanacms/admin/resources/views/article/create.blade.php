@@ -7,8 +7,10 @@
             <div class="panel panel-default">
                 <div class="panel-heading">新建内容</div>
                 <div class="panel-body">
-                    <form action="{{ url('article') }}" method="POST">
+                    <upload :token="'{{ csrf_token() }}'"></upload>
+                    <form action="{{ url('admin/article') }}" method="POST">
                         {!! csrf_field() !!}
+                        <input type="hidden" name="img_path" v-model="imagePath">
                         <input type="text" name="title" class="form-control" required="required" placeholder="请输入标题">
                         <br>
                         <textarea name="description" rows="3" class="form-control" placeholder="请输入内容"></textarea>

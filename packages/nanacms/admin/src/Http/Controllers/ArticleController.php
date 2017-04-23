@@ -33,7 +33,7 @@ class ArticleController extends Controller
 
         $article = Article::create($request->all());
         if ($article->save()) {
-            return redirect('article');
+            return redirect('admin/article');
         } else {
             return redirect()->back()->withInput()->withErrors('保存失败！');
         }

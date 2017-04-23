@@ -7,7 +7,7 @@
       公司案例
     </h1>
   </div>
-  <div class="blur blur-hook"></div>
+  <div class="blur-other"></div>
 </div>
 
 <example-list :data="{{$articles}}"></example-list>

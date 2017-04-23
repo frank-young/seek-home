@@ -7,7 +7,6 @@
       关于我们
     </h1>
   </div>
-  <div class="blur blur-hook"></div>
 </div>
 
 <div class="about-wrap">

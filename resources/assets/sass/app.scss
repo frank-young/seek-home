@@ -23,6 +23,9 @@ body {
 }
 
 // tool
+.mr-20 {
+  margin-right: 20px;
+}
 .mt-40 {
   margin-top: 40px;
 }
@@ -112,6 +115,10 @@ body {
   }
 }
 
+.btn {
+  font-weight: 300;
+}
+
 .btn-primary {
   z-index: 1;
   background-color: $primary-color;
@@ -142,7 +149,7 @@ body {
     z-index: 1;
     margin-top: 0;
     margin-bottom: 33px;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 300;
     color: #fff;
   }
@@ -153,11 +160,12 @@ body {
     position: relative;
     z-index: 1;
     margin-bottom: 33px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 2em;
     color: #fff;
   }
-  .blur {
+  .blur,
+  .blur-other {
     position: absolute;
     left: 0;
     top: 0;
@@ -179,6 +187,16 @@ body {
       height: 100%;
     }
   }
+  .blur {
+    background-color: #86bbff;
+    background-image: url('/seek-home/public/images/banner.jpg');
+  }
+  .blur-other {
+    // background-image: url('/seek-home/public/images/banner.jpg');
+    &:after {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
 }
 .pro-img-box {
   margin-top: 100px;
@@ -190,7 +208,7 @@ body {
 
 .btn-warning {
   z-index: 1;
-  width: 179px;
+  width: 130px;
   height: 45px;
   background-color: $danger-color;
   border-color: $danger-color;
@@ -218,7 +236,7 @@ body {
   z-index: 1;
   -webkit-transition: all .3s;
   transition: all .3s;
-  width: 179px;
+  width: 130px;
   height: 45px;
   border-radius: 45px;
   font-weight: 300;

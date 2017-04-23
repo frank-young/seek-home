@@ -3,20 +3,24 @@
 @section('content')
 <div class="jumbotron">
   <div class="container">
-    <div class="col-md-6 mt-40">
+    <div class="col-md-4">
       <h1>
-        生活总是在追求和探索
+        国家级特色小镇
       </h1>
       <p>
-        专业、顶级品牌设计服务商<br>
+        <!-- 西可（天津）倾力打造国家级特色小镇聚合平台 -->
+        华明镇是“双城双港”向外拓展的核心区域，地理位置的得天独厚，成为天津第一批特色小镇建设试点。<br>
       </p>
-      <div class="btn-group">
+      <div class="btn-group mr-20">
         <a class="btn btn-warning btn-lg" role="button" data-toggle="modal" data-target="#contactModal">联系我们</a>
       </div>
+      <div class="btn-group">
+        <a class="btn btn-line btn-lg">详情</a>
+      </div>
     </div>
-    <div class="col-md-6">
+    <!-- <div class="col-md-6">
         <img class="banner" src="{{ asset('images/banner.png') }}" alt="">
-    </div>
+    </div> -->
   </div>
   <div class="blur blur-hook"></div>
 </div>
