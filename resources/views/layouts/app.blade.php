@@ -37,7 +37,8 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <span class="logo-s">SEEK</span><span class="logo-b">BRAND</span>
+                        <!-- <span class="logo-s">SEEK</span><span class="logo-b">BRAND</span> -->
+                        <img src="./images/logo.png" alt="">
                     </a>
                 </div>
 

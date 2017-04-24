@@ -5,11 +5,13 @@
   <div class="container">
     <div class="col-md-4">
       <h1>
-        国家级特色小镇
+        西可品牌管理
       </h1>
       <p>
         <!-- 西可（天津）倾力打造国家级特色小镇聚合平台 -->
-        华明镇是“双城双港”向外拓展的核心区域，地理位置的得天独厚，成为天津第一批特色小镇建设试点。<br>
+        seek 探索，追寻<br>
+        Life is seeking 生活总是在追求和探索
+
       </p>
       <div class="btn-group mr-20">
         <a class="btn btn-warning btn-lg" role="button" data-toggle="modal" data-target="#contactModal">联系我们</a>
@@ -97,31 +99,25 @@
 <div class="container mt-80">
   <div class="row">
     <div class="col-md-12">
-      <h2 class="text-center">专业的设计流程</h2>
+      <h2 class="text-center"></h2>
     </div>
-    <div class="col-md-8 col-md-offset-2 img-center mt-80">
+    <div class="col-md-8 col-md-offset-2 img-center">
       <div class="pro-img-box">
-        <h4>1.项目需求文档</h4>
         <img src="{{ asset('images/pro_01.jpg') }}" alt="">
       </div>
       <div class="pro-img-box">
-        <h4>2.项目需求分析</h4>
         <img src="{{ asset('images/pro_02.jpg') }}" alt="">
       </div>
       <div class="pro-img-box">
-        <h4>3.项目周期安排</h4>
         <img src="{{ asset('images/pro_03.jpg') }}" alt="">
       </div>
       <div class="pro-img-box">
-        <h4>4.开展实时项目</h4>
         <img src="{{ asset('images/pro_04.jpg') }}" alt="">
       </div>
       <div class="pro-img-box">
-        <h4>5.项目意见交流</h4>
         <img src="{{ asset('images/pro_05.jpg') }}" alt="">
       </div>
       <div class="pro-img-box">
-        <h4>6.完成项目</h4>
         <img src="{{ asset('images/pro_06.jpg') }}" alt="">
       </div>
     </div>
