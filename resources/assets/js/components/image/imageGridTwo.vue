@@ -1,11 +1,20 @@
 <template>
-  <div class="image-grid-one">
+  <div class="image-grid-two">
       <div class="image-grid-title">
           <h2>{{ title }}</h2>
       </div>
       <div class="image-grid-items-wrap">
           <div class="image-grid-item">
-              <a class="image-box-sm" href="#">
+              <a class="image-box-lg" href="#">
+                  <div class="img">
+                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/c73e691168557074b066bf3427bb8a10.3c970e19bf5a12b4febf08.gif" alt="">
+                  </div>
+                  <div class="hover-box">
+                      <h4>行业解决方案</h4>
+                      <p>一些描述啊描述</p>
+                  </div>
+              </a>
+              <a class="image-box-sm top-75" href="#">
                   <div class="img">
                       <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
                   </div>
@@ -17,7 +26,10 @@
                       <p>一些描述啊描述</p>
                   </div>
               </a>
-              <a class="image-box-sm top-50" href="#">
+
+          </div>
+          <div class="image-grid-item">
+              <a class="image-box-sm" href="#">
                 <div class="txt">
                     <h4>行业解决方案</h4>
                 </div>
@@ -29,9 +41,7 @@
                     <p>一些描述啊描述</p>
                 </div>
               </a>
-          </div>
-          <div class="image-grid-item">
-              <a class="image-box-lg" href="#">
+              <a class="image-box-lg top-25" href="#">
                   <div class="img">
                       <img src="http://localhost:8080/seek-home/storage/app/uploads/article/c73e691168557074b066bf3427bb8a10.3c970e19bf5a12b4febf08.gif" alt="">
                   </div>
@@ -51,26 +61,12 @@
                       <p>一些描述啊描述</p>
                   </div>
               </a>
-          </div>
-          <div class="image-grid-item">
-              <a class="image-box-sm" href="#">
-                  <div class="txt">
-                      <h4>行业解决方案</h4>
-                  </div>
-                  <div class="img">
-                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
-                  </div>
-                  <div class="hover-box">
-                      <h4>行业解决方案</h4>
-                      <p>一些描述啊描述</p>
-                  </div>
-              </a>
-              <a class="image-box-sm top-50" href="#">
-                <div class="img">
-                    <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
-                </div>
+              <a class="image-box-sm top-75" href="#">
                 <div class="txt">
                     <h4>行业解决方案</h4>
+                </div>
+                <div class="img">
+                    <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
                 </div>
                 <div class="hover-box">
                     <h4>行业解决方案</h4>
@@ -109,7 +105,7 @@
 <style lang="less" scoped>
   @screen-xs-max: 768px;
 
-  .image-grid-one {
+  .image-grid-two {
     margin-top: 35px;
     .image-grid-title {
       margin-bottom: 35px;
@@ -170,7 +166,7 @@
   .image-grid-item {
     position: relative;
     float: left;
-    width: 25%;
+    width: 33.333333%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #f8f8f8;
@@ -178,12 +174,15 @@
     &:after {
       content: '';
       display: block;
-      padding-top: 100%;
+      padding-top: 150%;
     }
   }
   // 单个图文小模块
-  .top-50 {
-    top: 50% !important;
+  .top-25 {
+    top: 33.33333% !important;
+  }
+  .top-75 {
+    top: 66.66666% !important;
   }
   .image-box-sm {
     position: absolute;
@@ -191,7 +190,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 33.333333%;
     overflow: hidden;
     &:after {
       content: '';
@@ -274,7 +273,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 66.66666%;
     cursor: pointer;
     transition: all .3s;
     overflow: hidden;

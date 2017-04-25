@@ -34,6 +34,13 @@
 >
 </image-grid-one>
 
+<image-grid-two
+  :title="'整合设计解决方案'"
+  :data="{{$articles}}"
+  :more="'more'"
+>
+</image-grid-two>
+
 <div class="container content-wrap">
   <div class="row">
     <div class="col-md-6">

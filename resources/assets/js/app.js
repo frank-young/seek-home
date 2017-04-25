@@ -15,6 +15,7 @@ require('./bootstrap');
 
 Vue.component('example-list', require('./components/example/List.vue'));
 Vue.component('image-grid-one', require('./components/image/imageGridOne.vue'));
+Vue.component('image-grid-two', require('./components/image/imageGridTwo.vue'));
 
 const app = new Vue({
     el: '#app'
