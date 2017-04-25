@@ -26,6 +26,14 @@
   </div>
   <div class="blur blur-hook"></div>
 </div>
+
+<image-grid-one
+  :title="'整合设计解决方案'"
+  :data="{{$articles}}"
+  :more="'more'"
+>
+</image-grid-one>
+
 <div class="container content-wrap">
   <div class="row">
     <div class="col-md-6">
