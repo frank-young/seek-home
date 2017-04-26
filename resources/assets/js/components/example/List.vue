@@ -4,7 +4,7 @@
       <div class="col-sm-6 col-md-4" v-for="d in data">
         <div class="thumbnail">
           <div class="img-box">
-            <img :src="'/seek-home/storage/app/' + d.img_path" alt="">
+            <img :src="'http://localhost:8080/seek-home/storage/app/' + d.img_path" alt="">
           </div>
           <div class="caption">
             <h3>{{d.title}}</h3>

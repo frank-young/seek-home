@@ -4,13 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Nanacms\Admin\Models\Article;
+use Nanacms\Admin\Models\Carousel;
 
 class HomeController extends Controller
 {
     public function index()
     {
         $articles = Article::limit(3)->get();
-        return view('home', compact('articles'));
+        $carousels = Carousel::limit(6)->get();
+        $data = [
+          "articles" => $articles,
+          "carousels" => $carousels
+        ];
+
+        return view('home', compact('data'));
     }
 
     public function index2()

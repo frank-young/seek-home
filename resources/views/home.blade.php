@@ -1,14 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   <div class="container">
     <div class="col-md-4">
       <h1>
         西可品牌管理
       </h1>
       <p>
-        <!-- 西可（天津）倾力打造国家级特色小镇聚合平台 -->
         seek 探索，追寻<br>
         Life is seeking 生活总是在追求和探索
 
@@ -20,26 +19,64 @@
         <a class="btn btn-line btn-lg">详情</a>
       </div>
     </div>
-    <!-- <div class="col-md-6">
-        <img class="banner" src="{{ asset('images/banner.png') }}" alt="">
-    </div> -->
   </div>
   <div class="blur blur-hook"></div>
-</div>
+</div> -->
+
+<carousel
+  :data="{{$data['carousels']}}">
+</carousel>
+
+<sub-title
+  :title="'我们能做什么'"
+>
+</sub-title>
+
+<icon-card></icon-card>
+
+<icon-card-flip></icon-card-flip>
+
+<sub-title
+  :title="'项目工作流程'"
+>
+</sub-title>
+
+<step-tab>
+</step-tab>
+
+<split-box
+  :text="'立即联系我们：022-58095866'"
+>
+</split-box>
+
+<sub-title
+  :title="'案例展示'"
+>
+</sub-title>
 
 <image-grid-one
-  :title="'整合设计解决方案'"
-  :data="{{$articles}}"
+  :data="{{$data['articles']}}"
   :more="'more'"
 >
 </image-grid-one>
 
+<sub-title
+  :title="'行业整合方案'"
+>
+</sub-title>
+
+
 <image-grid-two
-  :title="'整合设计解决方案'"
-  :data="{{$articles}}"
+  :data="{{$data['articles']}}"
   :more="'more'"
 >
 </image-grid-two>
+
+<sub-title
+  :title="'合作客户'"
+>
+</sub-title>
+
 
 <div class="container content-wrap">
   <div class="row">
@@ -155,7 +192,7 @@
     <div class="col-md-12 mb-80">
       <h2 class="text-center">案例展示</h2>
     </div>
-    <example-list :data="{{$articles}}"></example-list>
+    <example-list :data="{{$data['articles']}}"></example-list>
   </div>
 </div>
 

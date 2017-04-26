@@ -14,8 +14,14 @@ require('./bootstrap');
  */
 
 Vue.component('example-list', require('./components/example/List.vue'));
-Vue.component('image-grid-one', require('./components/image/imageGridOne.vue'));
-Vue.component('image-grid-two', require('./components/image/imageGridTwo.vue'));
+Vue.component('carousel', require('./components/carousel/Carousel.vue'));
+Vue.component('sub-title', require('./components/subtitle/SubTitle.vue'));
+Vue.component('image-grid-one', require('./components/image/ImageGridOne.vue'));
+Vue.component('image-grid-two', require('./components/image/ImageGridTwo.vue'));
+Vue.component('icon-card', require('./components/iconcard/IconCard.vue'));
+Vue.component('icon-card-flip', require('./components/iconcard/IconCardFlip.vue'));
+Vue.component('step-tab', require('./components/steptab/StepTab.vue'));
+Vue.component('split-box', require('./components/splitbox/SplitBox.vue'));
 
 const app = new Vue({
     el: '#app'

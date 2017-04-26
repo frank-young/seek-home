@@ -11,6 +11,7 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
 Vue.component('article-index', require('./components/article/Index.vue'));
+Vue.component('carousel-index', require('./components/carousel/Index.vue'));
 Vue.component('upload', require('./components/upload/Upload.vue'));
 
 const app = new Vue({

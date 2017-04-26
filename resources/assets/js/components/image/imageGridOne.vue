@@ -1,8 +1,5 @@
 <template>
   <div class="image-grid-one">
-      <div class="image-grid-title">
-          <h2>{{ title }}</h2>
-      </div>
       <div class="image-grid-items-wrap">
           <div class="image-grid-item">
               <a class="image-box-sm" href="#">
@@ -89,9 +86,6 @@
 <script>
     export default {
       props: {
-        title: {
-          type: String
-        },
         data: {
           type: Array
         },
@@ -111,33 +105,6 @@
 
   .image-grid-one {
     margin-top: 35px;
-    .image-grid-title {
-      margin-bottom: 35px;
-      text-align: center;
-      h2 {
-        position: relative;
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 300;
-        color: #333;
-        &:before,
-        &:after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          width: 50px;
-          height: 2px;
-          margin-top: -1px;
-          background-color: #333;
-        }
-        &:before {
-          left: -80px;
-        }
-        &:after {
-          right: -80px;
-        }
-      }
-    }
     .image-grid-more {
       text-align: center;
       .btn-more {
