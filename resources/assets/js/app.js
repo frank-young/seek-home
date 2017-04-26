@@ -22,6 +22,7 @@ Vue.component('icon-card', require('./components/iconcard/IconCard.vue'));
 Vue.component('icon-card-flip', require('./components/iconcard/IconCardFlip.vue'));
 Vue.component('step-tab', require('./components/steptab/StepTab.vue'));
 Vue.component('split-box', require('./components/splitbox/SplitBox.vue'));
+Vue.component('image-grid', require('./components/image/ImageGrid.vue'));
 
 const app = new Vue({
     el: '#app'

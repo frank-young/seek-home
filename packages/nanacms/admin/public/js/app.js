@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 101);
+/******/ 	return __webpack_require__(__webpack_require__.s = 106);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -41253,7 +41253,7 @@ module.exports = function(module) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_resource__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_resource__ = __webpack_require__(94);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -41261,14 +41261,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(51);
+__webpack_require__(52);
 
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_resource__["a" /* default */]);
 
-Vue.component('article-index', __webpack_require__(68));
-Vue.component('carousel-index', __webpack_require__(69));
-Vue.component('upload', __webpack_require__(70));
+Vue.component('article-index', __webpack_require__(70));
+Vue.component('carousel-index', __webpack_require__(71));
+Vue.component('upload', __webpack_require__(72));
 
 var app = new Vue({
   el: '#app',
@@ -41426,7 +41426,8 @@ var PATH = '/seek-home/storage/app/';
 /* 48 */,
 /* 49 */,
 /* 50 */,
-/* 51 */
+/* 51 */,
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -41479,7 +41480,6 @@ window.axios.defaults.headers.common = {
 // });
 
 /***/ }),
-/* 52 */,
 /* 53 */,
 /* 54 */,
 /* 55 */,
@@ -41487,28 +41487,30 @@ window.axios.defaults.headers.common = {
 /* 57 */,
 /* 58 */,
 /* 59 */,
-/* 60 */
+/* 60 */,
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
 exports.push([module.i, "\n.img-wrap .img {\n  min-height: 400px;\n  max-height: 500px;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  background-color: #eee;\n  overflow: hidden;\n  border-radius: 5px;\n}\n.img-wrap .img img {\n  width: 100%;\n  height: 100%;\n}\n.img-wrap .upload {\n  padding-bottom: 15px;\n  border-bottom: 1px solid #f2f6f8;\n  margin-bottom: 30px;\n}\n.img-wrap .upload .btn-wrap {\n  position: relative;\n  height: 35px;\n}\n.img-wrap .upload .btn-wrap .btn {\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n.img-wrap .upload .btn-wrap .u-file {\n  display: block;\n  width: 70px;\n  opacity: 0;\n  filter: alpha(opacity=0);\n  z-index: 1;\n  outline: none;\n  cursor: pointer;\n}\n.img-wrap .upload .btn-wrap .u-borwer {\n  z-index: 0;\n}\n.img-wrap .upload .btn-wrap .u-submit {\n  left: 100px;\n}\n", ""]);
 
 /***/ }),
-/* 61 */,
 /* 62 */,
 /* 63 */,
 /* 64 */,
 /* 65 */,
 /* 66 */,
 /* 67 */,
-/* 68 */
+/* 68 */,
+/* 69 */,
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(40),
   /* template */
-  __webpack_require__(83),
+  __webpack_require__(86),
   /* scopeId */
   null,
   /* cssModules */
@@ -41535,14 +41537,14 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(41),
   /* template */
-  __webpack_require__(80),
+  __webpack_require__(83),
   /* scopeId */
   null,
   /* cssModules */
@@ -41569,18 +41571,18 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(98)
+__webpack_require__(102)
 
 var Component = __webpack_require__(1)(
   /* script */
   __webpack_require__(42),
   /* template */
-  __webpack_require__(88),
+  __webpack_require__(91),
   /* scopeId */
   null,
   /* cssModules */
@@ -41607,8 +41609,6 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 71 */,
-/* 72 */,
 /* 73 */,
 /* 74 */,
 /* 75 */,
@@ -41616,7 +41616,10 @@ module.exports = Component.exports
 /* 77 */,
 /* 78 */,
 /* 79 */,
-/* 80 */
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41648,9 +41651,9 @@ if (false) {
 }
 
 /***/ }),
-/* 81 */,
-/* 82 */,
-/* 83 */
+/* 84 */,
+/* 85 */,
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41682,11 +41685,11 @@ if (false) {
 }
 
 /***/ }),
-/* 84 */,
-/* 85 */,
-/* 86 */,
 /* 87 */,
-/* 88 */
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41751,8 +41754,9 @@ if (false) {
 }
 
 /***/ }),
-/* 89 */,
-/* 90 */
+/* 92 */,
+/* 93 */,
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42841,7 +42845,7 @@ var xhrClient = function (request) {
 
 var nodeClient = function (request) {
 
-    var client = __webpack_require__(100);
+    var client = __webpack_require__(105);
 
     return new PromiseObj(function (resolve) {
 
@@ -43305,20 +43309,20 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 
 /***/ }),
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
 /* 95 */,
 /* 96 */,
 /* 97 */,
-/* 98 */
+/* 98 */,
+/* 99 */,
+/* 100 */,
+/* 101 */,
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(60);
+var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -43338,14 +43342,15 @@ if(false) {
 }
 
 /***/ }),
-/* 99 */,
-/* 100 */
+/* 103 */,
+/* 104 */,
+/* 105 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 101 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(36);
