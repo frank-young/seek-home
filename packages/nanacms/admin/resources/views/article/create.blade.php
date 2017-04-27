@@ -18,7 +18,7 @@
                         <br>
                         <textarea name="description" rows="3" class="form-control" placeholder="请输入内容"></textarea>
                         <br>
-                        <script id="container" name="body" type="text/plain">这里写你的初始化内容</script>
+                        <script id="container" name="body" type="text/plain"></script>
                         <script type="text/javascript">
                             var ue = UE.getEditor('container');
                         </script>

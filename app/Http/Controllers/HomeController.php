@@ -11,13 +11,16 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $articles = Article::limit(3)->get();
+        $articles = Article::offset(0)->limit(6)->get();
+        $example = Article::offset(6)->limit(12)->get();
+
         $carousels = Carousel::limit(6)->get();
         $customers = Customer::all();
         $data = [
           "articles" => $articles,
           "carousels" => $carousels,
-          "customers" => $customers
+          "customers" => $customers,
+          "example" => $example
         ];
 
         return view('home', compact('data'));

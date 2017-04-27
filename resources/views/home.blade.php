@@ -56,7 +56,7 @@
 
 <image-grid-one
   :data="{{$data['articles']}}"
-  :more="'more'"
+  :more="'/example'"
 >
 </image-grid-one>
 
@@ -67,8 +67,8 @@
 
 
 <image-grid-two
-  :data="{{$data['articles']}}"
-  :more="'more'"
+  :data="{{$data['example']}}"
+  :more="'/example'"
 >
 </image-grid-two>
 

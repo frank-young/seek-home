@@ -196,10 +196,8 @@ body {
   }
   .blur {
     background-color: #86bbff;
-    background-image: url('/seek-home/public/images/banner.jpg');
   }
   .blur-other {
-    // background-image: url('/seek-home/public/images/banner.jpg');
     &:after {
       background-color: rgba(0, 0, 0, 0);
     }

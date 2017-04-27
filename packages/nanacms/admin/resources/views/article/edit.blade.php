@@ -14,7 +14,7 @@
                         {!! csrf_field() !!}
                         <input name="_method" type="hidden" value="PATCH">
                         <input type="hidden" name="img_path" v-model="imagePath">
-                        <input type="" name="img_path_arr" v-model="imagePathArr">
+                        <input type="hidden" name="img_path_arr" v-model="imagePathArr">
                         <input type="hidden" name="id" value="{{$article->id}}">
                         <input type="text" name="title" class="form-control" required="required" placeholder="请输入标题" value="{{$article->title}}">
                         <br>

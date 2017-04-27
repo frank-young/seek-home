@@ -4,23 +4,23 @@
           <div class="image-grid-item">
               <a class="image-box-lg" href="#">
                   <div class="img">
-                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/c73e691168557074b066bf3427bb8a10.3c970e19bf5a12b4febf08.gif" alt="">
+                      <img :src="'/storage/' + data[0].img_path" alt="">
                   </div>
                   <div class="hover-box">
-                      <h4>行业解决方案</h4>
-                      <p>一些描述啊描述</p>
+                      <h4>{{data[0].title}}</h4>
+                      <p>{{data[0].title.description}}</p>
                   </div>
               </a>
               <a class="image-box-sm top-75" href="#">
                   <div class="img">
-                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
+                    <img :src="'/storage/' + data[1].img_path" alt="">
                   </div>
                   <div class="txt">
-                      <h4>行业解决方案</h4>
+                      <h4>{{data[1].title}}</h4>
                   </div>
                   <div class="hover-box">
-                      <h4>行业解决方案</h4>
-                      <p>一些描述啊描述</p>
+                    <h4>{{data[1].title}}</h4>
+                    <p>{{data[1].title.description}}</p>
                   </div>
               </a>
 
@@ -28,46 +28,50 @@
           <div class="image-grid-item">
               <a class="image-box-sm" href="#">
                 <div class="txt">
-                    <h4>行业解决方案</h4>
+                  <h4>{{data[2].title}}</h4>
                 </div>
                 <div class="img">
-                    <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
+                  <img :src="'/storage/' + data[2].img_path" alt="">
+
                 </div>
                 <div class="hover-box">
-                    <h4>行业解决方案</h4>
-                    <p>一些描述啊描述</p>
+                  <h4>{{data[2].title}}</h4>
+                  <p>{{data[2].title.description}}</p>
                 </div>
               </a>
               <a class="image-box-lg top-25" href="#">
                   <div class="img">
-                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/c73e691168557074b066bf3427bb8a10.3c970e19bf5a12b4febf08.gif" alt="">
+                    <img :src="'/storage/' + data[3].img_path" alt="">
+
                   </div>
                   <div class="hover-box">
-                      <h4>行业解决方案</h4>
-                      <p>一些描述啊描述</p>
+                    <h4>{{data[3].title}}</h4>
+                    <p>{{data[3].title.description}}</p>
                   </div>
               </a>
           </div>
           <div class="image-grid-item">
               <a class="image-box-lg" href="#">
                   <div class="img">
-                      <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
+                    <img :src="'/storage/' + data[4].img_path" alt="">
+
                   </div>
                   <div class="hover-box">
-                      <h4>行业解决方案</h4>
-                      <p>一些描述啊描述</p>
+                    <h4>{{data[4].title}}</h4>
+                    <p>{{data[4].title.description}}</p>
                   </div>
               </a>
               <a class="image-box-sm top-75" href="#">
                 <div class="txt">
-                    <h4>行业解决方案</h4>
+                  <h4>{{data[5].title}}</h4>
                 </div>
                 <div class="img">
-                    <img src="http://localhost:8080/seek-home/storage/app/uploads/article/7149c362c03fb621667053bcf9f283f7.144236u599ua11a5veyiyj.jpg.thumb.jpg" alt="">
+                  <img :src="'/storage/' + data[5].img_path" alt="">
+
                 </div>
                 <div class="hover-box">
-                    <h4>行业解决方案</h4>
-                    <p>一些描述啊描述</p>
+                  <h4>{{data[5].title}}</h4>
+                  <p>{{data[5].title.description}}</p>
                 </div>
               </a>
           </div>
