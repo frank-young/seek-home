@@ -13,6 +13,7 @@
                     <form action="{{ url('admin/article') }}" method="POST">
                         {!! csrf_field() !!}
                         <input type="hidden" name="img_path" v-model="imagePath">
+                        <input type="hidden" name="img_path_arr" v-model="imagePathArr">
                         <input type="text" name="title" class="form-control" required="required" placeholder="请输入标题">
                         <br>
                         <textarea name="description" rows="3" class="form-control" placeholder="请输入内容"></textarea>

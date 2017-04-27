@@ -1,9 +1,14 @@
 <template>
-    <div class="row img-wrap">
+    <div class="row img-batch-wrap">
         <div class="col-md-12">
-            <div class="img">
-                <img :src="src" alt="">
+            <div class="row">
+                <div class="col-md-2" v-for="img in imgArr">
+                  <div class="img" >
+                      <img :src="'/storage/' + img.src" alt="">
+                  </div>
+                </div>
             </div>
+
             <div class="upload">
                 <form @submit.prevent="submit" name="loginForm" enctype="multipart/form-data">
                     <input type="hidden" name="_token" :value="token">
@@ -22,26 +27,25 @@
 
 <script>
     const ERR_OK = 0
-    const PATH = '/storage/'
+    // const PATH = '/storage/'
 
     export default {
         props: {
-            token: {
-                type: String
-            },
-            path: {
-                type: String
+            pathArr: {
+                type: Array
             }
         },
         data() {
             return {
-                src: ''
+                token: window.Laravel.csrfToken,
+                src: '',
+                imgArr: []
             }
         },
         created() {
             if(this.path !== ''){
-                this.src = PATH + this.path
-                this.$parent.imagePath = this.path
+                // this.imgArr = this.pathArr
+                // this.$parent.imagePathArr = this.pathArr
                 // if (this.src !== ''){
                 //   this.src = PATH + this.path
                 //   this.$parent.imagePath = this.path
@@ -62,20 +66,20 @@
                 this.$http.post('/image/upload', formData, options).then((res) => {
                     res = res.body
                     if (res.errno === ERR_OK) {
-                        this.src = PATH + res.path
-                        this.$parent.imagePath = res.path
+                        let obj = {
+                          src: res.path
+                        }
+                        this.imgArr.push(obj)
+                        this.$parent.imagePathArr = JSON.stringify(this.imgArr)
                     }
                 })
             }
-            // showimagePath() {
-            //     return this.imagePath
-            // }
         }
     }
 </script>
 
 <style lang="less" scpoed>
-    .img-wrap {
+    .img-batch-wrap {
         .img{
             height: 100px;
             height: 100px;

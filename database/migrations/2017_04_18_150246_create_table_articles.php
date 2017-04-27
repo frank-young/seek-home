@@ -18,6 +18,7 @@ class CreateTableArticles extends Migration
             $table->string('title')->comment('标题');
             $table->string('auth')->nullable()->comment('作者');
             $table->string('img_path')->nullable()->comment('图片路径');
+            $table->text('img_path_arr')->nullable()->comment('图片路径组');
             $table->string('description')->comment('描述');
             $table->text('body')->comment('内容');
             $table->timestamps();

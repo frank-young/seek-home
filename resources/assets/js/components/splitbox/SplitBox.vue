@@ -21,7 +21,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .split-box {
     padding: 60px;
     background-color: #30a4d7;

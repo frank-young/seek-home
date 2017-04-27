@@ -54,7 +54,8 @@ class ArticleController extends Controller
 	    ]);
     	$article = Article::where('id', $request->get('id'))->first();
       $article->title = $request->get('title');
-	    $article->img_path = $request->get('img_path');
+      $article->img_path = $request->get('img_path');
+	    $article->img_path_arr = $request->get('img_path_arr');
 	    $article->description = $request->get('description');
 	    $article->body = $request->get('body');
 

@@ -21,8 +21,12 @@ Vue.component('image-grid-two', require('./components/image/ImageGridTwo.vue'));
 Vue.component('icon-card', require('./components/iconcard/IconCard.vue'));
 Vue.component('icon-card-flip', require('./components/iconcard/IconCardFlip.vue'));
 Vue.component('step-tab', require('./components/steptab/StepTab.vue'));
+Vue.component('image-tab', require('./components/steptab/ImageTab.vue'));
 Vue.component('split-box', require('./components/splitbox/SplitBox.vue'));
+Vue.component('split-box-header', require('./components/splitbox/SplitBoxHeader.vue'));
+Vue.component('split-box-footer', require('./components/splitbox/SplitBoxFooter.vue'));
 Vue.component('image-grid', require('./components/image/ImageGrid.vue'));
+Vue.component('fixed-box', require('./components/tools/FixedBox.vue'));
 
 const app = new Vue({
     el: '#app'

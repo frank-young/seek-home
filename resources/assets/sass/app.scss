@@ -301,10 +301,10 @@ body {
 
 .footer {
   background-color: #f0f0f0;
-  padding: 15px 0;
+  padding: 25px 0;
   p {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     color: $text-color;
     margin-bottom: 5px;
   }
@@ -312,7 +312,6 @@ body {
 
 // about
 .about-wrap {
-  min-height: 55vh;
   .logo-wrap {
     margin: 40px 0;
     text-align: center;
@@ -328,7 +327,7 @@ body {
     font-size: 30px;
     line-height: 1.75em;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
     color: $text-color;
   }
   h4 {
@@ -339,7 +338,7 @@ body {
     margin: 0 auto;
     font-size: 20px;
     line-height: 1.8em;
-    font-weight: 100;
+    font-weight: 400;
     color: $text-color;
   }
   .bg-section {
@@ -348,12 +347,10 @@ body {
     background-color: #f8f8f8;
   }
   .p-t-b-100 {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-  .min-h {
-    height: 100vh;
-  }
+
   .self-wrap {
     font-size: 18px;
     .face {
@@ -432,7 +429,14 @@ body {
 }
 
 .contact-wrap {
-  margin: 200px auto;
+  margin: 150px auto;
+  h2 {
+    font-weight: 400;
+  }
+  .phone {
+    font-size: 80px;
+    color: #3097D1;
+  }
 }
 
 .example-detail-wrap {
@@ -452,11 +456,13 @@ body {
     font-weight: 300;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.9em;
-    font-weight: 300;
+    font-weight: 400;
   }
   .example-detail-text {
+    font-size: 16px;
+    line-height: 1.9em;
     img {
       width: 100% !important;
     }

@@ -9,10 +9,12 @@
                 <div class="panel-heading">新建内容</div>
                 <div class="panel-body">
                     <upload :token="'{{ csrf_token() }}'" :path="'{{$article->img_path}}'"></upload>
+                    <upload-batch :token="'{{ csrf_token() }}'"></upload-batch>
                     <form action="{{ url('admin/article/update') }}" method="POST">
                         {!! csrf_field() !!}
                         <input name="_method" type="hidden" value="PATCH">
                         <input type="hidden" name="img_path" v-model="imagePath">
+                        <input type="" name="img_path_arr" v-model="imagePathArr">
                         <input type="hidden" name="id" value="{{$article->id}}">
                         <input type="text" name="title" class="form-control" required="required" placeholder="请输入标题" value="{{$article->title}}">
                         <br>

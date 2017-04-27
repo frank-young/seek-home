@@ -11,6 +11,7 @@ class Article extends Model
     'description',
     'auth',
     'img_path',
+    'img_path_arr',
     'body',
   ];
 }

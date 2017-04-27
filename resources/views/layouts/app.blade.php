@@ -114,7 +114,9 @@
             </div>
           </div>
         </div>
+        <fixed-box></fixed-box>
     </div>
+
 
     <!-- Scripts -->
     <script src="{{ asset('/js/app.js') }}"></script>

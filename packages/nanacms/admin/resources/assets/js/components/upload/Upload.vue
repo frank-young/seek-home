@@ -26,15 +26,13 @@
 
     export default {
         props: {
-            token: {
-                type: String
-            },
             path: {
                 type: String
             }
         },
         data() {
             return {
+                token: window.Laravel.csrfToken,
                 src: ''
             }
         },
