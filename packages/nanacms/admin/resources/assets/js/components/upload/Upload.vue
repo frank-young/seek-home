@@ -22,7 +22,7 @@
 
 <script>
     const ERR_OK = 0
-    const PATH = '/seek-home/storage/app/'
+    const PATH = '/storage/'
 
     export default {
         props: {
@@ -59,7 +59,7 @@
                 options.headers = {'Content-Type': 'application/x-www-form-urlencoded'}
                 options.emulateJSON = true
 
-                this.$http.post('/seek-home/public/image/upload', formData, options).then((res) => {
+                this.$http.post('/image/upload', formData, options).then((res) => {
                     res = res.body
                     if (res.errno === ERR_OK) {
                         this.src = PATH + res.path
@@ -74,7 +74,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     .img-wrap {
         .img{
             min-height: 400px;

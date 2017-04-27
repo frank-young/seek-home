@@ -2,18 +2,15 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-4" v-for="d in data">
-        <div class="thumbnail">
+        <a :href="'./example/' + d.id" class="thumbnail">
           <div class="img-box">
-            <img :src="'http://localhost:8080/seek-home/storage/app/' + d.img_path" alt="">
+            <img :src="'/storage/' + d.img_path" alt="">
           </div>
           <div class="caption">
             <h3>{{d.title}}</h3>
             <p>{{d.description}}</p>
-            <p>
-              <a :href="'./example/' + d.id" class="btn btn-primary" role="button">详情</a>
-            </p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -37,9 +34,17 @@
 <style lang="less">
   .thumbnail {
     padding: 0;
+    margin: 30px 0;
     border: 0;
     border-radius: 5px;
-    box-shadow: 5px 5px 20px #ddd;
+    box-shadow: 0 0 10px 1px #eee;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    &:hover {
+      text-decoration: none;
+      box-shadow: 5px 5px 20px #ddd;
+    }
     .img-box {
       height: 225px;
       overflow: hidden;
@@ -50,11 +55,15 @@
     h3 {
       overflow: hidden;
       text-overflow: ellipsis;
-      font-weight: 300;
+      font-weight: 400;
     }
     p {
-      font-weight: 300;
+      height: 56px;
+      font-weight: 400;
+      font-size: 16px;
       line-height: 1.75em;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     img {
       width: 100%;

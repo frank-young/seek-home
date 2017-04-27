@@ -187,6 +187,7 @@
             border: 0;
             border-radius: 0;
             outline: none;
+            cursor: pointer;
             &:hover,
             &:active,
             &:focus {

@@ -178,8 +178,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        Nanacms\Admin\AdminServiceProvider::class
-
+        Nanacms\Admin\AdminServiceProvider::class,
+        'Stevenyangecho\UEditor\UEditorServiceProvider'
     ],
 
     /*

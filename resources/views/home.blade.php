@@ -77,7 +77,9 @@
 >
 </sub-title>
 
-<image-grid>
+<image-grid
+  :data="{{$data['customers']}}"
+>
 </image-grid>
 
 <split-box

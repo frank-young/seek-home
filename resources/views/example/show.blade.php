@@ -15,9 +15,11 @@
       <div class="example-detail-wrap">
         <h1>{{$article->title}}</h1>
         <div class="ex-img-box">
-          <img src="/seek-home/storage/app/{{$article->img_path}}" alt="">
+          <img src="/storage/{{$article->img_path}}" alt="">
         </div>
-        <p>{{$article->body}}</p>
+        <div class="example-detail-text">
+          {!! $article->body !!}
+        </div>
       </div>
 
     </div>

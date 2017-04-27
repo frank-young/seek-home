@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Nanacms\Admin\Models\Article;
 use Nanacms\Admin\Models\Carousel;
+use Nanacms\Admin\Models\Customer;
 
 class HomeController extends Controller
 {
@@ -12,9 +13,11 @@ class HomeController extends Controller
     {
         $articles = Article::limit(3)->get();
         $carousels = Carousel::limit(6)->get();
+        $customers = Customer::all();
         $data = [
           "articles" => $articles,
-          "carousels" => $carousels
+          "carousels" => $carousels,
+          "customers" => $customers
         ];
 
         return view('home', compact('data'));

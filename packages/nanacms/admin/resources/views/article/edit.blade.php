@@ -1,6 +1,7 @@
 @extends('admin::layouts.app')
 
 @section('content')
+@include('UEditor::head')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -17,7 +18,14 @@
                         <br>
                         <textarea name="description" rows="3" class="form-control" placeholder="请输入简介">{{$article->description}}</textarea>
                         <br>
-                        <textarea name="body" rows="3" class="form-control" placeholder="请输入内容">{{$article->body}}</textarea>
+                        <script id="container" name="body" type="text/plain">
+                              {{$article->body}}
+                          </script>
+
+                          <!-- 实例化编辑器 -->
+                          <script type="text/javascript">
+                              var ue = UE.getEditor('container');
+                          </script>
                         <br>
                         <button class="btn btn-info">确认</button>
                     </form>

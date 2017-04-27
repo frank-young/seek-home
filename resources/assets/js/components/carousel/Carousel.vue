@@ -7,7 +7,7 @@
 
       <div class="carousel-inner" role="listbox">
         <div class="item" v-for="(d,i) in data" :class="{ active: i===0 }">
-          <img :src="'http://localhost:8080/seek-home/storage/app/' + d.img_path" alt="">
+          <img :src="'/storage/' + d.img_path" alt="">
           <div class="carousel-caption">
             <h2>西可品牌设计</h2>
           </div>

@@ -116,7 +116,7 @@ body {
 
 .link-nav {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   &:after {
     border-bottom: 3px solid $primary-color;
   }
@@ -455,6 +455,11 @@ body {
     font-size: 18px;
     line-height: 1.9em;
     font-weight: 300;
+  }
+  .example-detail-text {
+    img {
+      width: 100% !important;
+    }
   }
 }
 
