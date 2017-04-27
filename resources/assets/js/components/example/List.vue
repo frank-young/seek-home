@@ -55,6 +55,7 @@
     h3 {
       overflow: hidden;
       text-overflow: ellipsis;
+      white-space: nowrap;
       font-weight: 400;
     }
     p {

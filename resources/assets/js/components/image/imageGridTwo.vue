@@ -2,16 +2,16 @@
   <div class="image-grid-two">
       <div class="image-grid-items-wrap">
           <div class="image-grid-item">
-              <a class="image-box-lg" href="#">
+              <a class="image-box-lg" :href="'/example/' + data[0].id">
                   <div class="img">
                       <img :src="'/storage/' + data[0].img_path" alt="">
                   </div>
                   <div class="hover-box">
                       <h4>{{data[0].title}}</h4>
-                      <p>{{data[0].title.description}}</p>
+                      <p>{{data[0].description}}</p>
                   </div>
               </a>
-              <a class="image-box-sm top-75" href="#">
+              <a class="image-box-sm top-75" :href="'/example/' + data[1].id">
                   <div class="img">
                     <img :src="'/storage/' + data[1].img_path" alt="">
                   </div>
@@ -20,13 +20,13 @@
                   </div>
                   <div class="hover-box">
                     <h4>{{data[1].title}}</h4>
-                    <p>{{data[1].title.description}}</p>
+                    <p>{{data[1].description}}</p>
                   </div>
               </a>
 
           </div>
           <div class="image-grid-item">
-              <a class="image-box-sm" href="#">
+              <a class="image-box-sm" :href="'/example/' + data[2].id">
                 <div class="txt">
                   <h4>{{data[2].title}}</h4>
                 </div>
@@ -36,32 +36,32 @@
                 </div>
                 <div class="hover-box">
                   <h4>{{data[2].title}}</h4>
-                  <p>{{data[2].title.description}}</p>
+                  <p>{{data[2].description}}</p>
                 </div>
               </a>
-              <a class="image-box-lg top-25" href="#">
+              <a class="image-box-lg top-25" :href="'/example/' + data[3].id">
                   <div class="img">
                     <img :src="'/storage/' + data[3].img_path" alt="">
 
                   </div>
                   <div class="hover-box">
                     <h4>{{data[3].title}}</h4>
-                    <p>{{data[3].title.description}}</p>
+                    <p>{{data[3].description}}</p>
                   </div>
               </a>
           </div>
           <div class="image-grid-item">
-              <a class="image-box-lg" href="#">
+              <a class="image-box-lg" :href="'/example/' + data[4].id">
                   <div class="img">
                     <img :src="'/storage/' + data[4].img_path" alt="">
 
                   </div>
                   <div class="hover-box">
                     <h4>{{data[4].title}}</h4>
-                    <p>{{data[4].title.description}}</p>
+                    <p>{{data[4].description}}</p>
                   </div>
               </a>
-              <a class="image-box-sm top-75" href="#">
+              <a class="image-box-sm top-75" :href="'/example/' + data[5].id">
                 <div class="txt">
                   <h4>{{data[5].title}}</h4>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="hover-box">
                   <h4>{{data[5].title}}</h4>
-                  <p>{{data[5].title.description}}</p>
+                  <p>{{data[5].description}}</p>
                 </div>
               </a>
           </div>
@@ -113,7 +113,7 @@
       .btn-more {
         padding: 6px 40px;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
         border: 1px solid #666;
         border-radius: 4px;
         color: #666;
@@ -200,7 +200,7 @@
         text-align: center;
         line-height: 1.75em;
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 400;
         color: #333;
       }
     }
@@ -221,11 +221,12 @@
         transition: all .3s;
         h4,p {
           font-size: 20px;
-          font-weight: 300;
+          font-weight: 400;
           line-height: 1.75em;
         }
         p {
-          font-size: 14px;
+          padding: 15px;
+          font-size: 16px;
         }
     }
     // 动画效果
@@ -280,11 +281,12 @@
         transition: all .3s;
         h4,p {
           font-size: 20px;
-          font-weight: 300;
+          font-weight: 400;
           line-height: 1.75em;
         }
         p {
-          font-size: 14px;
+          padding: 15px;
+          font-size: 16px;
         }
     }
 

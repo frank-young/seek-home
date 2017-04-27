@@ -7,12 +7,12 @@ use Nanacms\Admin\Models\Article;
 use Nanacms\Admin\Models\Carousel;
 use Nanacms\Admin\Models\Customer;
 
-class HomeController extends Controller
+class ApiController extends Controller
 {
     public function index()
     {
-        $articles = Article::offset(0)->limit(6)->get(['id','title','description','img_path']);
-        $example = Article::offset(6)->limit(12)->get(['id','title','description','img_path']);
+        $articles = Article::offset(0)->limit(6)->get();
+        $example = Article::offset(6)->limit(12)->get();
 
         $carousels = Carousel::limit(6)->get();
         $customers = Customer::all();
@@ -26,6 +26,12 @@ class HomeController extends Controller
         return view('home', compact('data'));
     }
 
+    public function index2()
+    {
+        $articles = Article::limit(3)->get();
+        return view('home2', compact('articles'));
+    }
+
     public function about()
     {
         return view('about');
@@ -33,7 +39,7 @@ class HomeController extends Controller
 
     public function example()
     {
-        $articles = Article::all(['id','title','description','img_path']);
+        $articles = Article::all();
         return view('example', compact('articles'));
     }
 

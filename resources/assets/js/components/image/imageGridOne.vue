@@ -2,7 +2,7 @@
   <div class="image-grid-one">
       <div class="image-grid-items-wrap">
           <div class="image-grid-item">
-              <a class="image-box-sm" href="#">
+              <a class="image-box-sm" :href="'/example/' + data[0].id">
                   <div class="img">
                       <img :src="'/storage/' + data[0].img_path" alt="">
                   </div>
@@ -11,10 +11,10 @@
                   </div>
                   <div class="hover-box">
                       <h4>{{data[0].title}}</h4>
-                      <p>{{data[0].title.description}}</p>
+                      <p>{{data[0].description}}</p>
                   </div>
               </a>
-              <a class="image-box-sm top-50" href="#">
+              <a class="image-box-sm top-50" :href="'/example/' + data[1].id">
                 <div class="txt">
                     <h4>{{data[1].title}}</h4>
                 </div>
@@ -23,34 +23,34 @@
                 </div>
                 <div class="hover-box">
                     <h4>{{data[1].title}}</h4>
-                    <p>{{data[1].title.description}}</p>
+                    <p>{{data[1].description}}</p>
                 </div>
               </a>
           </div>
           <div class="image-grid-item">
-              <a class="image-box-lg" href="#">
+              <a class="image-box-lg" :href="'/example/' + data[3].id">
                   <div class="img">
                       <img :src="'/storage/' + data[2].img_path" alt="">
                   </div>
                   <div class="hover-box">
                       <h4>{{data[2].title}}</h4>
-                      <p>{{data[2].title.description}}</p>
+                      <p>{{data[2].description}}</p>
                   </div>
               </a>
           </div>
           <div class="image-grid-item">
-              <a class="image-box-lg" href="#">
+              <a class="image-box-lg" :href="'/example/' + data[3].id">
                   <div class="img">
                       <img :src="'/storage/' + data[3].img_path" alt="">
                   </div>
                   <div class="hover-box">
                       <h4>{{data[3].title}}</h4>
-                      <p>{{data[3].title.description}}</p>
+                      <p>{{data[3].description}}</p>
                   </div>
               </a>
           </div>
           <div class="image-grid-item">
-              <a class="image-box-sm" href="#">
+              <a class="image-box-sm" :href="'/example/' + data[4].id">
                   <div class="txt">
                       <h4>{{data[4].title}}</h4>
                   </div>
@@ -59,10 +59,10 @@
                   </div>
                   <div class="hover-box">
                     <h4>{{data[4].title}}</h4>
-                    <p>{{data[4].title.description}}</p>
+                    <p>{{data[4].description}}</p>
                   </div>
               </a>
-              <a class="image-box-sm top-50" href="#">
+              <a class="image-box-sm top-50" :href="'/example/' + data[5].id">
                 <div class="img">
                     <img :src="'/storage/' + data[5].img_path" alt="">
                 </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="hover-box">
                   <h4>{{data[5].title}}</h4>
-                  <p>{{data[5].title.description}}</p>
+                  <p>{{data[5].description}}</p>
                 </div>
               </a>
           </div>
@@ -219,7 +219,8 @@
           line-height: 1.75em;
         }
         p {
-          font-size: 14px;
+          padding: 0 15px;
+          font-size: 16px;
         }
     }
     // 动画效果
@@ -232,7 +233,7 @@
     &:hover > .hover-box {
       opacity: 1;
       filter: opacity(100);
-      padding-top: 20px;
+      padding-top: 0px;
     }
   }
 
@@ -278,7 +279,8 @@
           line-height: 1.75em;
         }
         p {
-          font-size: 14px;
+          padding: 15px;
+          font-size: 16px;
         }
     }
 
