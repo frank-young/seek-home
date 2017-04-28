@@ -27,6 +27,7 @@ Vue.component('split-box-header', require('./components/splitbox/SplitBoxHeader.
 Vue.component('split-box-footer', require('./components/splitbox/SplitBoxFooter.vue'));
 Vue.component('image-grid', require('./components/image/ImageGrid.vue'));
 Vue.component('fixed-box', require('./components/tools/FixedBox.vue'));
+Vue.component('btn-more', require('./components/tools/BtnMore.vue'));
 
 const app = new Vue({
     el: '#app'

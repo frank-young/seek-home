@@ -28,49 +28,15 @@
 </carousel>
 
 <sub-title
-  :title="'我们能做什么'"
->
-</sub-title>
-
-<icon-card></icon-card>
-
-<icon-card-flip></icon-card-flip>
-
-<sub-title
-  :title="'项目工作流程'"
->
-</sub-title>
-
-<step-tab>
-</step-tab>
-
-<split-box
-  :text="'立即联系我们：022-58095866'"
->
-</split-box>
-
-<sub-title
   :title="'案例展示'"
 >
 </sub-title>
+<example-list :data="{{$data['articles']}}"></example-list>
 
-<image-grid-one
-  :data="{{$data['articles']}}"
+<btn-more
   :more="'/example'"
 >
-</image-grid-one>
-
-<sub-title
-  :title="'行业整合方案'"
->
-</sub-title>
-
-
-<image-grid-two
-  :data="{{$data['example']}}"
-  :more="'/example'"
->
-</image-grid-two>
+</btn-more>
 
 <sub-title
   :title="'合作客户'"

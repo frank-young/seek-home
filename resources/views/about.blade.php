@@ -16,11 +16,11 @@
         </h3>
       </div>
       <h3>
-        我们信仰专业的力量，用优秀的设计创作品牌，用品牌的力量驱动企业的持续发展。
+        西可（天津）品牌设计有限公司信仰专业的力量，用优秀的设计创作品牌，用品牌的力量驱动企业的持续发展。
       </h3>
     </div>
   </div>
-  <div class="bg-section min-h">
+  <!-- <div class="bg-section min-h">
     <div class="container p-t-b-100">
       <div class="row">
         <div class="col-md-12">
@@ -59,8 +59,17 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
+
+<sub-title
+  :title="'我们能做什么'"
+>
+</sub-title>
+
+<icon-card></icon-card>
+
+<icon-card-flip></icon-card-flip>
 
 <sub-title
   :title="'项目工作流程'"
