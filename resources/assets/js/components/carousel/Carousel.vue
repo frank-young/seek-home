@@ -9,7 +9,7 @@
         <div class="item" v-for="(d,i) in data" :class="{ active: i===0 }">
           <img :src="'/storage/' + d.img_path" alt="">
           <div class="carousel-caption">
-            <h2>西可品牌设计</h2>
+            <h2>西可（天津）品牌设计有限公司</h2>
           </div>
         </div>
 

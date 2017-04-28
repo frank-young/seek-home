@@ -87,7 +87,6 @@
   }
   .tab-content {
     margin-bottom: 50px;
-    height: 500px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #ccc;

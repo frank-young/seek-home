@@ -74,8 +74,8 @@
               </div>
               <div class="col-xs-9">
                 <p class="text-right">Copyright © 2017 seekbrand.net 版权所有</p>
-                <p class="text-right">西可（天津）有限公司</p>
-                <p class="text-right"><a class="link" target="_blank" href="http://www.miitbeian.gov.cn/">津ICP备16054332-2号</a></p>
+                <p class="text-right">西可（天津）品牌设计有限公司</p>
+                <p class="text-right"><a class="link" target="_blank" href="http://www.miitbeian.gov.cn/">津ICP备17001161号-1</a></p>
                 <p class="text-right">Power By <a class="link" target="_blank" href="http://www.nanafly.com/">NanaDeep</a></p>
               </div>
             </div>
@@ -89,21 +89,6 @@
                 <h4 class="modal-title" id="contactModalLabel">联系我们</h4>
               </div>
               <div class="modal-body">
-                <!-- <form>
-                  <div class="form-group">
-                    <label>姓名</label>
-                    <input type="text" class="form-control" placeholder="姓名">
-                  </div>
-                  <div class="form-group">
-                    <label>手机</label>
-                    <input type="text" class="form-control" placeholder="手机">
-                  </div>
-                  <div class="form-group">
-                    <label>简单介绍</label>
-                    <textarea type="text" class="form-control" placeholder="简单的介绍"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">发送</button>
-                </form> -->
                 <div class="contact-phone">
                   请拨打电话：<span>022-58095866</span>
                 </div>

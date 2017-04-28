@@ -28,7 +28,7 @@
               </a>
           </div>
           <div class="image-grid-item">
-              <a class="image-box-lg" :href="'/example/' + data[3].id">
+              <a class="image-box-lg" :href="'/example/' + data[2].id">
                   <div class="img">
                       <img :src="'/storage/' + data[2].img_path" alt="">
                   </div>
