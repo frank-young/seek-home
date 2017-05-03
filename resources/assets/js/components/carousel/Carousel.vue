@@ -8,17 +8,19 @@
       <div class="carousel-inner" role="listbox">
         <div class="item" v-for="(d,i) in data" :class="{ active: i===0 }">
           <img :src="'/storage/' + d.img_path" alt="">
-          <div class="carousel-caption">
+          <!-- <div class="carousel-caption">
             <h2>西可（天津）品牌设计有限公司</h2>
-          </div>
+          </div> -->
         </div>
 
       </div>
 
       <a class="left carousel-control" href="#carousel-image-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="right carousel-control" href="#carousel-image-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
   </div>
@@ -41,20 +43,25 @@
 
 <style lang="less">
   .carousel {
+    height: 65vh;
+    max-height: 550px;
+    overflow: hidden;
     .carousel-control.left,
     .carousel-control.right {
         background-image: none;
     }
     .carousel-inner {
       .item {
+        position: relative;
         img {
-          margin: 0 auto;
+          margin: -20vh auto 0 auto;
         }
       }
     }
     .carousel-caption {
       top: 0;
       left: 0;
+      z-index: 2;
       right: auto;
       bottom: auto;
       padding: 20px;

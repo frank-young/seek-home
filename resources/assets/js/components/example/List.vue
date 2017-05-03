@@ -46,7 +46,7 @@
       box-shadow: 5px 5px 20px #ddd;
     }
     .img-box {
-      height: 225px;
+      height: 268px;
       overflow: hidden;
     }
     .caption {
