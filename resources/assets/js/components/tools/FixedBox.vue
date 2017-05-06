@@ -25,7 +25,7 @@
   .fixed-box {
     position: fixed;
     right: 0;
-    top: 30%;
+    top: 56%;
     z-index: 1;
     width: 200px;
     height: 120px;

@@ -15,8 +15,8 @@
       <h2 class="text-center">立即拨打服务热线</h2>
       <h2 class="text-center phone">022-58095866</h2>
       <h2 class="text-center mt-40">联系地址</h2>
-      <h2 class="text-center" style="font-size:28px;">天津自贸区（空港经济特区）西五道35号汇集广场1-4-308</h2>
-      <h2 class="text-center" style="font-size:28px;">天津市和平区大沽北路2号环球金融中心50层5006</h2>
+      <h2 class="text-center" style="font-size:26px;">天津市和平区大沽北路2号环球金融中心50层 5006</h2>
+      <h2 class="text-center" style="font-size:26px;">天津市滨海新区第二大街57号泰达双创示范区MSD-G1座15层</h2>
 
     </div>
   </div>

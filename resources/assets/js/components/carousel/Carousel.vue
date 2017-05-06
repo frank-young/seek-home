@@ -43,20 +43,9 @@
 
 <style lang="less">
   .carousel {
-    height: 65vh;
-    max-height: 550px;
-    overflow: hidden;
     .carousel-control.left,
     .carousel-control.right {
-        background-image: none;
-    }
-    .carousel-inner {
-      .item {
-        position: relative;
-        img {
-          margin: -20vh auto 0 auto;
-        }
-      }
+        // background-image: none;
     }
     .carousel-caption {
       top: 0;
@@ -67,12 +56,6 @@
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.5);
       text-shadow: none;
-      h2 {
-        padding: 0;
-        margin: 0;
-        font-size: 24px;
-        font-weight: 300;
-      }
     }
     .carousel-indicators {
       li {

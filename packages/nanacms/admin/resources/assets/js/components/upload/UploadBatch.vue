@@ -2,9 +2,12 @@
     <div class="row img-batch-wrap">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-2" v-for="img in imgArr">
+                <div class="col-md-2" v-for="(img,i) in imgArr">
                   <div class="img" >
                       <img :src="'/storage/' + img.src" alt="">
+                      <a class="img-batch-del" @click="del(i)">
+                        删除
+                      </a>
                   </div>
                 </div>
             </div>
@@ -43,7 +46,10 @@
             }
         },
         created() {
-            if(this.path !== ''){
+            console.log(this.pathArr)
+            if(this.pathArr.length !== 0){
+              this.imgArr = JSON.parse(this.pathArr)
+              this.$parent.imagePathArr = JSON.stringify(this.imgArr)
                 // this.imgArr = this.pathArr
                 // this.$parent.imagePathArr = this.pathArr
                 // if (this.src !== ''){
@@ -54,8 +60,13 @@
                 //   this.$parent.imagePath = '/seek-home/public/images/banner.jpg'
                 // }
             }
+
         },
         methods: {
+            del (i) {
+              this.imgArr.splice(i,1);
+              this.$parent.imagePathArr = JSON.stringify(this.imgArr)
+            },
             submit(event) {
                 let options = {}
                 let formData = new FormData(event.target)
@@ -81,15 +92,30 @@
 <style lang="less" scpoed>
     .img-batch-wrap {
         .img{
-            height: 100px;
+            position: relative;
             height: 100px;
             margin-bottom: 20px;
             margin-top: 10px;
             overflow: hidden;
             border-radius: 5px;
+            box-shadow: 3px 3px 8px #ccc;
             img {
                 width: 100px;
                 height: 100px;
+            }
+            .img-batch-del {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              z-index: 1;
+              width: 100%;
+              height: 30px;
+              line-height: 30px;
+              color: #fff;
+              background: rgba(0, 0, 0, 0.6);
+              text-align: center;
+              text-decoration: none;
+              cursor: pointer;
             }
         }
         .upload {

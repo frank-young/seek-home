@@ -9,7 +9,7 @@
                 <div class="panel-heading">新建内容</div>
                 <div class="panel-body">
                     <upload :token="'{{ csrf_token() }}'" :path="'{{$article->img_path}}'"></upload>
-                    <upload-batch :token="'{{ csrf_token() }}'"></upload-batch>
+                    <upload-batch :token="'{{ csrf_token() }}'" :path-arr="'{{$article->img_path_arr}}'"></upload-batch>
                     <form action="{{ url('admin/article/update') }}" method="POST">
                         {!! csrf_field() !!}
                         <input name="_method" type="hidden" value="PATCH">
