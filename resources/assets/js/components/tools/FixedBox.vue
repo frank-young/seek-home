@@ -1,5 +1,17 @@
 <template>
   <div class="fixed-box">
+    <!-- <div class="phone-wrap">
+      <a href="">首页</a>
+    </div>
+    <div class="phone-wrap">
+      <a href="">公司案例</a>
+    </div>
+    <div class="phone-wrap">
+      <a href="">关于我们</a>
+    </div>
+    <div class="phone-wrap">
+      <a href="">联系我们</a>
+    </div> -->
     <div class="phone-wrap">
       <img src="./img/phone.png" alt=""> <span>022-58095866</span>
     </div>

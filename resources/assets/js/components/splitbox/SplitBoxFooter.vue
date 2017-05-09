@@ -2,7 +2,11 @@
   <div class="split-box-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2">
+              <img class="qrcode" src="./img/code.jpg" alt="qrcode">
+              <p>扫一扫 查看更多详情</p>
+            </div>
+            <div class="col-md-10">
               <h3>{{title}}</h3>
               <h4>{{text}}</h4>
             </div>
@@ -53,7 +57,7 @@
       line-height: 1em;
       font-size: 36px;
       color: #fff;
-      text-align: center;
+      // text-align: center;
     }
     h4 {
       position: relative;
@@ -62,6 +66,22 @@
       padding: 0;
       line-height: 1em;
       font-size: 42px;
+      color: #fff;
+      // text-align: center;
+    }
+    .qrcode {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+    p {
+      position: relative;
+      z-index: 2;
+      line-height: 1.7em;
+      margin: 20px 0 0 0;
+      padding: 0;
+      line-height: 1em;
+      font-size: 16px;
       color: #fff;
       text-align: center;
     }
