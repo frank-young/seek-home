@@ -1,29 +1,31 @@
 <template>
-  <div class="carousel">
-    <div id="carousel-image-generic" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-image-generic" :data-slide-to="i" :class="{ active: i===0 }" v-for="(d,i) in data"></li>
-      </ol>
+  <div class="container">
+    <div class="carousel">
+      <div id="carousel-image-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-image-generic" :data-slide-to="i" :class="{ active: i===0 }" v-for="(d,i) in data"></li>
+        </ol>
 
-      <div class="carousel-inner" role="listbox">
-        <div class="item" v-for="(d,i) in data" :class="{ active: i===0 }">
-          <img :src="'/storage/' + d.img_path" alt="">
-          <!-- <div class="carousel-caption">
-            <h2>西可（天津）品牌设计有限公司</h2>
-          </div> -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item" v-for="(d,i) in data" :class="{ active: i===0 }">
+            <img :src="'/storage/' + d.img_path" alt="">
+            <!-- <div class="carousel-caption">
+              <h2>西可（天津）品牌设计有限公司</h2>
+            </div> -->
+          </div>
+
         </div>
 
+        <a class="left carousel-control" href="#carousel-image-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-image-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-
-      <a class="left carousel-control" href="#carousel-image-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-image-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
+    </div>
   </div>
 </template>
 
@@ -45,7 +47,25 @@
   .carousel {
     .carousel-control.left,
     .carousel-control.right {
-        // background-image: none;
+        background-image: none;
+        span {
+          display: inline-block;
+          width: 60px;
+          height: 60px;
+          padding: 15px;
+          border-radius: 50%;
+          background-color: rgba(0 , 0, 0, 0.6);
+        }
+    }
+    .carousel-control.left {
+      span {
+        margin-left: -50px;
+      }
+    }
+    .carousel-control.right {
+        span {
+          margin-right: -50px;
+        }
     }
     .carousel-caption {
       top: 0;

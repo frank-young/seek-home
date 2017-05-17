@@ -3,6 +3,8 @@
 @section('content')
 <split-box-header
   :title="'{{$article->title}}'"
+  :sub-title= "'公司案例'"
+  :sub-src= "'/example'"
 >
 </split-box-header>
 
@@ -10,7 +12,7 @@
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="example-detail-wrap">
-        <h1>{!! $article->title !!}</h1>
+        <h1 style="font-size: 20px;font-weight:400">{!! $article->title !!}</h1>
         <image-tab :data="{{$article}}"></image-tab>
         <div class="example-detail-text">
           {!! $article->body !!}

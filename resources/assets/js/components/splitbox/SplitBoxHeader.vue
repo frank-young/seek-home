@@ -3,7 +3,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-              <h3>{{title}}</h3>
+              <h3>
+                <span v-show="subTitle !== ''">
+                  <a class="link link-sub" :href="subSrc">{{subTitle}}</a> /
+                </span>
+                {{title}}</h3>
             </div>
         </div>
     </div>
@@ -15,6 +19,13 @@
     export default {
       props: {
         title: {
+          type: String
+        },
+        subTitle: {
+          type: String,
+          default: ''
+        },
+        subSrc: {
           type: String
         }
       }
@@ -49,6 +60,13 @@
       line-height: 1em;
       font-size: 32px;
       color: #fff;
+    }
+    .link-sub {
+      color: #30a4d7;
+      &:after {
+        border-bottom: 3px solid #30a4d7;
+        bottom: -3px;
+      }
     }
   }
 </style>
